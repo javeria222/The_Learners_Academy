@@ -37,13 +37,26 @@
       };
     </script>
   </head>
-  <body class="font-sans antialiased text-slate-700 bg-white">
+  <body class="font-sans antialiased text-slate-700 bg-brand-950">
+    
     <!-- ============================================================= -->
-    <!-- NAV                                                            -->
+    <!-- FIXED BACKGROUND IMAGE + OVERLAY                              -->
+    <!-- ============================================================= -->
+    <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+      <img
+        src="https://images.pexels.com/photos/37811241/pexels-photo-37811241.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        alt="Students focused on their studies in a bright classroom"
+        class="w-full h-full object-cover opacity-20"
+      />
+      <div class="absolute inset-0 bg-gradient-to-br from-brand-950/50 via-brand-900/40 to-brand-800/30"></div>
+    </div>
+
+    <!-- ============================================================= -->
+    <!-- NAV                                                           -->
     <!-- ============================================================= -->
     <nav
       id="nav"
-      class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm"
+      class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-white/75 backdrop-blur-md shadow-sm"
     >
       <div class="max-w-6xl mx-auto px-5 sm:px-6 h-16 flex items-center justify-between">
         <!-- Logo / Business name -->
@@ -80,330 +93,330 @@
     <span id="top" class="block"></span>
 
     <!-- ============================================================= -->
-    <!-- HERO                                                           -->
+    <!-- MAIN CONTENT CONTAINER (SCROLLS OVER BG)                      -->
     <!-- ============================================================= -->
-    <header class="relative pt-28 pb-20 sm:pt-36 sm:pb-28 overflow-hidden bg-brand-950 text-white">
-      <img
-        src="https://images.pexels.com/photos/37811241/pexels-photo-37811241.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-        alt="Students focused on their studies in a bright classroom"
-        class="absolute inset-0 w-full h-full object-cover opacity-20"
-      />
-      <div class="absolute inset-0 bg-gradient-to-br from-brand-950 via-brand-900/95 to-brand-800/85"></div>
+    <main class="relative z-10">
 
-      <div class="relative max-w-6xl mx-auto px-5 sm:px-6 text-center reveal">
-        <span
-          class="inline-block text-xs font-semibold tracking-widest uppercase text-accent-400 bg-white/10 ring-1 ring-white/15 px-3 py-1.5 rounded-full mb-6"
-          >Karachi's Trusted Learning Institute</span
-        >
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight max-w-3xl mx-auto">
-          Expert Teaching in Karachi.<br class="hidden sm:block" />
-          <span class="text-accent-400">Results You Can See.</span>
-        </h1>
-        <p class="mt-6 text-lg sm:text-xl text-brand-100 max-w-2xl mx-auto leading-relaxed">
-          Personalized tutoring for every student — from exam prep to skill-building, led by
-          experienced teachers who care about your success.
-        </p>
-        <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="tel:+922100000000"
-            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-accent-500 hover:bg-accent-600 text-white font-semibold px-7 py-3.5 text-base shadow-lg transition-all hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
+      <!-- ============================================================= -->
+      <!-- HERO                                                          -->
+      <!-- ============================================================= -->
+      <header class="pt-28 pb-20 sm:pt-36 sm:pb-28 text-white">
+        <div class="max-w-6xl mx-auto px-5 sm:px-6 text-center reveal">
+          <span
+            class="inline-block text-xs font-semibold tracking-widest uppercase text-accent-400 bg-white/10 ring-1 ring-white/15 px-3 py-1.5 rounded-full mb-6"
+            >Karachi's Trusted Learning Institute</span
           >
-            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-            Schedule a Visit
-          </a>
-          <a
-            href="#services"
-            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 hover:bg-white/20 ring-1 ring-white/20 text-white font-semibold px-7 py-3.5 text-base transition-all hover:-translate-y-0.5 active:translate-y-0"
-          >
-            Explore Programs
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <!-- ============================================================= -->
-    <!-- TRUST BAR                                                      -->
-    <!-- ============================================================= -->
-    <section class="bg-white border-b border-slate-100">
-      <div class="max-w-6xl mx-auto px-5 sm:px-6 py-8 sm:py-10">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 reveal">
-          <!-- item -->
-          <div class="flex items-center gap-3">
-            <span class="shrink-0 w-10 h-10 rounded-lg bg-brand-50 text-brand-700 grid place-items-center">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </span>
-            <div>
-              <p class="font-semibold text-slate-800 text-sm leading-tight">Licensed Educators</p>
-              <p class="text-xs text-slate-500">Certified & vetted</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-3">
-            <span class="shrink-0 w-10 h-10 rounded-lg bg-brand-50 text-brand-700 grid place-items-center">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </span>
-            <div>
-              <p class="font-semibold text-slate-800 text-sm leading-tight">10+ Years</p>
-              <p class="text-xs text-slate-500">Teaching experience</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-3">
-            <span class="shrink-0 w-10 h-10 rounded-lg bg-brand-50 text-brand-700 grid place-items-center">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
-            </span>
-            <div>
-              <p class="font-semibold text-slate-800 text-sm leading-tight">Same-Day Help</p>
-              <p class="text-xs text-slate-500">Quick scheduling</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-3">
-            <span class="shrink-0 w-10 h-10 rounded-lg bg-brand-50 text-brand-700 grid place-items-center">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg>
-            </span>
-            <div>
-              <p class="font-semibold text-slate-800 text-sm leading-tight">5-Star Rated</p>
-              <p class="text-xs text-slate-500">By parents & students</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================= -->
-    <!-- SERVICES                                                       -->
-    <!-- ============================================================= -->
-    <section id="services" class="bg-slate-50 py-20 sm:py-24">
-      <div class="max-w-6xl mx-auto px-5 sm:px-6">
-        <div class="text-center max-w-2xl mx-auto reveal">
-          <span class="text-sm font-semibold text-brand-700 uppercase tracking-wider">What We Offer</span>
-          <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-brand-950 tracking-tight">
-            Programs Designed to Help You Succeed
-          </h2>
-          <p class="mt-4 text-slate-600">
-            From foundational subjects to advanced exam prep, our courses cover every level and
-            learning style.
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight max-w-3xl mx-auto">
+            Expert Teaching in Karachi.<br class="hidden sm:block" />
+            <span class="text-accent-400">Results You Can See.</span>
+          </h1>
+          <p class="mt-6 text-lg sm:text-xl text-brand-100 max-w-2xl mx-auto leading-relaxed">
+            Personalized tutoring for every student — from exam prep to skill-building, led by
+            experienced teachers who care about your success.
           </p>
-        </div>
-
-        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <!-- card -->
-          <article class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover hover:-translate-y-1 transition-all duration-300">
-            <span class="w-12 h-12 rounded-xl bg-brand-900 text-white grid place-items-center mb-5">
-              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-            </span>
-            <h3 class="font-bold text-lg text-brand-950">Exam Preparation</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed">Targeted coaching for Matric, Intermediate, and entry tests with past papers and mock exams.</p>
-          </article>
-
-          <article class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover hover:-translate-y-1 transition-all duration-300">
-            <span class="w-12 h-12 rounded-xl bg-brand-900 text-white grid place-items-center mb-5">
-              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </span>
-            <h3 class="font-bold text-lg text-brand-950">Coding & IT Skills</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed">Hands-on courses in programming, web development, and computer literacy for all ages.</p>
-          </article>
-
-          <article class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover hover:-translate-y-1 transition-all duration-300">
-            <span class="w-12 h-12 rounded-xl bg-brand-900 text-white grid place-items-center mb-5">
-              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
-            </span>
-            <h3 class="font-bold text-lg text-brand-950">Math & Science</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed">Concept-focused tutoring that builds real understanding, not just memorization.</p>
-          </article>
-
-          <article class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover hover:-translate-y-1 transition-all duration-300">
-            <span class="w-12 h-12 rounded-xl bg-brand-900 text-white grid place-items-center mb-5">
-              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14M5 8l2-4h10l2 4M5 8v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><path d="M9 12h6"/></svg>
-            </span>
-            <h3 class="font-bold text-lg text-brand-950">English & Languages</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed">Spoken English, grammar, and IELTS prep with certified language instructors.</p>
-          </article>
-
-          <article class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover hover:-translate-y-1 transition-all duration-300">
-            <span class="w-12 h-12 rounded-xl bg-brand-900 text-white grid place-items-center mb-5">
-              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
-            </span>
-            <h3 class="font-bold text-lg text-brand-950">One-on-One Tutoring</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed">Private sessions tailored to each student's pace, goals, and schedule.</p>
-          </article>
-
-          <article class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover hover:-translate-y-1 transition-all duration-300">
-            <span class="w-12 h-12 rounded-xl bg-brand-900 text-white grid place-items-center mb-5">
-              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 6h20M2 18h20"/></svg>
-            </span>
-            <h3 class="font-bold text-lg text-brand-950">After-School Support</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed">Homework help and concept revision that keeps students on track all term long.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================= -->
-    <!-- WHY CHOOSE US                                                  -->
-    <!-- ============================================================= -->
-    <section id="why" class="bg-white py-20 sm:py-24">
-      <div class="max-w-6xl mx-auto px-5 sm:px-6">
-        <div class="text-center max-w-2xl mx-auto reveal">
-          <span class="text-sm font-semibold text-brand-700 uppercase tracking-wider">Why Choose Us</span>
-          <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-brand-950 tracking-tight">
-            A Smarter Way to Learn
-          </h2>
-          <p class="mt-4 text-slate-600">
-            We focus on what actually moves results: great teachers, clear structure, and genuine
-            attention to each student.
-          </p>
-        </div>
-
-        <div class="mt-12 grid gap-8 sm:grid-cols-3">
-          <div class="reveal text-center">
-            <span class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 grid place-items-center mx-auto mb-5">
-              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </span>
-            <h3 class="font-bold text-lg text-brand-950">Experienced Teachers</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
-              Every instructor is qualified and trained to explain tough topics in a way that
-              actually clicks.
-            </p>
-          </div>
-          <div class="reveal text-center">
-            <span class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 grid place-items-center mx-auto mb-5">
-              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
-            </span>
-            <h3 class="font-bold text-lg text-brand-950">Personalized Plans</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
-              No one-size-fits-all. We assess each student and build a study plan around their
-              goals.
-            </p>
-          </div>
-          <div class="reveal text-center">
-            <span class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 grid place-items-center mx-auto mb-5">
-              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            </span>
-            <h3 class="font-bold text-lg text-brand-950">Proven Results</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
-              Our students consistently improve their grades and confidence — and parents see the
-              difference.
-            </p>
+          <div class="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="tel:+922100000000"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-accent-500 hover:bg-accent-600 text-white font-semibold px-7 py-3.5 text-base shadow-lg transition-all hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
+            >
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              Schedule a Visit
+            </a>
+            <a
+              href="#services"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 hover:bg-white/20 ring-1 ring-white/20 text-white font-semibold px-7 py-3.5 text-base transition-all hover:-translate-y-0.5 active:translate-y-0"
+            >
+              Explore Programs
+            </a>
           </div>
         </div>
-      </div>
-    </section>
+      </header>
 
-    <!-- ============================================================= -->
-    <!-- TESTIMONIALS                                                   -->
-    <!-- ============================================================= -->
-    <section id="testimonials" class="bg-slate-50 py-20 sm:py-24">
-      <div class="max-w-6xl mx-auto px-5 sm:px-6">
-        <div class="text-center max-w-2xl mx-auto reveal">
-          <span class="text-sm font-semibold text-brand-700 uppercase tracking-wider">Testimonials</span>
-          <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-brand-950 tracking-tight">
-            What Parents & Students Say
-          </h2>
+      <!-- ============================================================= -->
+      <!-- TRUST BAR                                                     -->
+      <!-- ============================================================= -->
+      <section class="bg-white/90 backdrop-blur-sm border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-5 sm:px-6 py-8 sm:py-10">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+            <!-- item -->
+            <div class="flex items-center gap-3">
+              <span class="shrink-0 w-10 h-10 rounded-lg bg-brand-50 text-brand-700 grid place-items-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </span>
+              <div>
+                <p class="font-semibold text-slate-800 text-sm leading-tight">Licensed Educators</p>
+                <p class="text-xs text-slate-500">Certified & vetted</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="shrink-0 w-10 h-10 rounded-lg bg-brand-50 text-brand-700 grid place-items-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </span>
+              <div>
+                <p class="font-semibold text-slate-800 text-sm leading-tight">10+ Years</p>
+                <p class="text-xs text-slate-500">Teaching experience</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="shrink-0 w-10 h-10 rounded-lg bg-brand-50 text-brand-700 grid place-items-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
+              </span>
+              <div>
+                <p class="font-semibold text-slate-800 text-sm leading-tight">Same-Day Help</p>
+                <p class="text-xs text-slate-500">Quick scheduling</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="shrink-0 w-10 h-10 rounded-lg bg-brand-50 text-brand-700 grid place-items-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg>
+              </span>
+              <div>
+                <p class="font-semibold text-slate-800 text-sm leading-tight">5-Star Rated</p>
+                <p class="text-xs text-slate-500">By parents & students</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="mt-12 grid gap-6 md:grid-cols-3">
-          <!-- quote -->
-          <figure class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover transition-all duration-300">
-            <div class="flex gap-1 text-accent-500 mb-4" aria-label="5 out of 5 stars">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg>
-            </div>
-            <blockquote class="text-slate-700 leading-relaxed">"My son's math grade jumped from C to A in one term. The teachers genuinely care about each student."</blockquote>
-            <figcaption class="mt-5 flex items-center gap-3">
-              <span class="w-10 h-10 rounded-full bg-brand-100 text-brand-800 grid place-items-center font-semibold text-sm">FH</span>
-              <div><p class="font-semibold text-sm text-brand-950">Fatima Hassan</p><p class="text-xs text-slate-500">Parent, Grade 9</p></div>
-            </figcaption>
-          </figure>
-
-          <figure class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover transition-all duration-300">
-            <div class="flex gap-1 text-accent-500 mb-4" aria-label="5 out of 5 stars">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg>
-            </div>
-            <blockquote class="text-slate-700 leading-relaxed">"The entry-test prep was exactly what I needed. I cleared my university admission with confidence."</blockquote>
-            <figcaption class="mt-5 flex items-center gap-3">
-              <span class="w-10 h-10 rounded-full bg-brand-100 text-brand-800 grid place-items-center font-semibold text-sm">AK</span>
-              <div><p class="font-semibold text-sm text-brand-950">Ahmed Khan</p><p class="text-xs text-slate-500">Student, Entry Test Batch</p></div>
-            </figcaption>
-          </figure>
-
-          <figure class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover transition-all duration-300">
-            <div class="flex gap-1 text-accent-500 mb-4" aria-label="5 out of 5 stars">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg>
-            </div>
-            <blockquote class="text-slate-700 leading-relaxed">"Professional, punctual, and truly invested in students. Highly recommend The Learner's Academy."</blockquote>
-            <figcaption class="mt-5 flex items-center gap-3">
-              <span class="w-10 h-10 rounded-full bg-brand-100 text-brand-800 grid place-items-center font-semibold text-sm">SR</span>
-              <div><p class="font-semibold text-sm text-brand-950">Sana Raza</p><p class="text-xs text-slate-500">Parent, O-Level</p></div>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================= -->
-    <!-- SERVICE AREA                                                   -->
-    <!-- ============================================================= -->
-    <section id="area" class="bg-white py-20 sm:py-24">
-      <div class="max-w-6xl mx-auto px-5 sm:px-6">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div class="reveal">
-            <span class="text-sm font-semibold text-brand-700 uppercase tracking-wider">Service Area</span>
+      <!-- ============================================================= -->
+      <!-- SERVICES                                                      -->
+      <!-- ============================================================= -->
+      <section id="services" class="bg-slate-50/90 backdrop-blur-sm py-20 sm:py-24">
+        <div class="max-w-6xl mx-auto px-5 sm:px-6">
+          <div class="text-center max-w-2xl mx-auto reveal">
+            <span class="text-sm font-semibold text-brand-700 uppercase tracking-wider">What We Offer</span>
             <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-brand-950 tracking-tight">
-              Serving Students Across Karachi
+              Programs Designed to Help You Succeed
             </h2>
-            <p class="mt-4 text-slate-600 leading-relaxed">
-              We offer both in-person classes at our campus and home-tutoring options across the
-              city. If your neighborhood isn't listed, give us a call — we're always expanding.
+            <p class="mt-4 text-slate-600">
+              From foundational subjects to advanced exam prep, our courses cover every level and
+              learning style.
             </p>
           </div>
-          <div class="reveal">
-            <ul class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>Gulshan-e-Iqbal</li>
-              <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>DHA</li>
-              <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>Clifton</li>
-              <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>Nazimabad</li>
-              <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>Korangi</li>
-              <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>Malir</li>
-              <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>Johar</li>
-              <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>PECHS</li>
-              <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>Bahadurabad</li>
-            </ul>
+
+          <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- card -->
+            <article class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover hover:-translate-y-1 transition-all duration-300">
+              <span class="w-12 h-12 rounded-xl bg-brand-900 text-white grid place-items-center mb-5">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </span>
+              <h3 class="font-bold text-lg text-brand-950">Exam Preparation</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">Targeted coaching for Matric, Intermediate, and entry tests with past papers and mock exams.</p>
+            </article>
+
+            <article class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover hover:-translate-y-1 transition-all duration-300">
+              <span class="w-12 h-12 rounded-xl bg-brand-900 text-white grid place-items-center mb-5">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>
+              <h3 class="font-bold text-lg text-brand-950">Coding & IT Skills</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">Hands-on courses in programming, web development, and computer literacy for all ages.</p>
+            </article>
+
+            <article class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover hover:-translate-y-1 transition-all duration-300">
+              <span class="w-12 h-12 rounded-xl bg-brand-900 text-white grid place-items-center mb-5">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+              </span>
+              <h3 class="font-bold text-lg text-brand-950">Math & Science</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">Concept-focused tutoring that builds real understanding, not just memorization.</p>
+            </article>
+
+            <article class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover hover:-translate-y-1 transition-all duration-300">
+              <span class="w-12 h-12 rounded-xl bg-brand-900 text-white grid place-items-center mb-5">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14M5 8l2-4h10l2 4M5 8v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><path d="M9 12h6"/></svg>
+              </span>
+              <h3 class="font-bold text-lg text-brand-950">English & Languages</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">Spoken English, grammar, and IELTS prep with certified language instructors.</p>
+            </article>
+
+            <article class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover hover:-translate-y-1 transition-all duration-300">
+              <span class="w-12 h-12 rounded-xl bg-brand-900 text-white grid place-items-center mb-5">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+              </span>
+              <h3 class="font-bold text-lg text-brand-950">One-on-One Tutoring</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">Private sessions tailored to each student's pace, goals, and schedule.</p>
+            </article>
+
+            <article class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover hover:-translate-y-1 transition-all duration-300">
+              <span class="w-12 h-12 rounded-xl bg-brand-900 text-white grid place-items-center mb-5">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 6h20M2 18h20"/></svg>
+              </span>
+              <h3 class="font-bold text-lg text-brand-950">After-School Support</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">Homework help and concept revision that keeps students on track all term long.</p>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ============================================================= -->
-    <!-- FINAL CTA                                                      -->
-    <!-- ============================================================= -->
-    <section class="bg-accent-500 py-16 sm:py-20">
-      <div class="max-w-4xl mx-auto px-5 sm:px-6 text-center reveal">
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Ready to See Real Progress?
-        </h2>
-        <p class="mt-3 text-white/90 text-lg">
-          Call us today for a free consultation and find the right program for your child.
-        </p>
-        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="tel:+922100000000"
-            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 hover:bg-white/20 ring-1 ring-white/20 text-white font-semibold px-7 py-3.5 text-base transition-all hover:-translate-y-0.5 active:translate-y-0"
-          >
-            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-            Schedule a Visit
-          </a>
-          <a
-            href="#services"
-            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-white text-accent-600 hover:bg-brand-50 font-semibold px-7 py-3.5 text-base shadow-lg transition-all hover:-translate-y-0.5 active:translate-y-0"
-          >
-            View Programs
-          </a>
+      <!-- ============================================================= -->
+      <!-- WHY CHOOSE US                                                 -->
+      <!-- ============================================================= -->
+      <section id="why" class="bg-white/90 backdrop-blur-sm py-20 sm:py-24">
+        <div class="max-w-6xl mx-auto px-5 sm:px-6">
+          <div class="text-center max-w-2xl mx-auto reveal">
+            <span class="text-sm font-semibold text-brand-700 uppercase tracking-wider">Why Choose Us</span>
+            <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-brand-950 tracking-tight">
+              A Smarter Way to Learn
+            </h2>
+            <p class="mt-4 text-slate-600">
+              We focus on what actually moves results: great teachers, clear structure, and genuine
+              attention to each student.
+            </p>
+          </div>
+
+          <div class="mt-12 grid gap-8 sm:grid-cols-3">
+            <div class="reveal text-center">
+              <span class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 grid place-items-center mx-auto mb-5">
+                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </span>
+              <h3 class="font-bold text-lg text-brand-950">Experienced Teachers</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                Every instructor is qualified and trained to explain tough topics in a way that
+                actually clicks.
+              </p>
+            </div>
+            <div class="reveal text-center">
+              <span class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 grid place-items-center mx-auto mb-5">
+                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+              </span>
+              <h3 class="font-bold text-lg text-brand-950">Personalized Plans</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                No one-size-fits-all. We assess each student and build a study plan around their
+                goals.
+              </p>
+            </div>
+            <div class="reveal text-center">
+              <span class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-700 grid place-items-center mx-auto mb-5">
+                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </span>
+              <h3 class="font-bold text-lg text-brand-950">Proven Results</h3>
+              <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                Our students consistently improve their grades and confidence — and parents see the
+                difference.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- TESTIMONIALS                                                  -->
+      <!-- ============================================================= -->
+      <section id="testimonials" class="bg-slate-50/90 backdrop-blur-sm py-20 sm:py-24">
+        <div class="max-w-6xl mx-auto px-5 sm:px-6">
+          <div class="text-center max-w-2xl mx-auto reveal">
+            <span class="text-sm font-semibold text-brand-700 uppercase tracking-wider">Testimonials</span>
+            <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-brand-950 tracking-tight">
+              What Parents & Students Say
+            </h2>
+          </div>
+
+          <div class="mt-12 grid gap-6 md:grid-cols-3">
+            <!-- quote -->
+            <figure class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover transition-all duration-300">
+              <div class="flex gap-1 text-accent-500 mb-4" aria-label="5 out of 5 stars">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg>
+              </div>
+              <blockquote class="text-slate-700 leading-relaxed">"My son's math grade jumped from C to A in one term. The teachers genuinely care about each student."</blockquote>
+              <figcaption class="mt-5 flex items-center gap-3">
+                <span class="w-10 h-10 rounded-full bg-brand-100 text-brand-800 grid place-items-center font-semibold text-sm">FH</span>
+                <div><p class="font-semibold text-sm text-brand-950">Fatima Hassan</p><p class="text-xs text-slate-500">Parent, Grade 9</p></div>
+              </figcaption>
+            </figure>
+
+            <figure class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover transition-all duration-300">
+              <div class="flex gap-1 text-accent-500 mb-4" aria-label="5 out of 5 stars">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg>
+              </div>
+              <blockquote class="text-slate-700 leading-relaxed">"The entry-test prep was exactly what I needed. I cleared my university admission with confidence."</blockquote>
+              <figcaption class="mt-5 flex items-center gap-3">
+                <span class="w-10 h-10 rounded-full bg-brand-100 text-brand-800 grid place-items-center font-semibold text-sm">AK</span>
+                <div><p class="font-semibold text-sm text-brand-950">Ahmed Khan</p><p class="text-xs text-slate-500">Student, Entry Test Batch</p></div>
+              </figcaption>
+            </figure>
+
+            <figure class="reveal bg-white rounded-2xl p-7 shadow-card hover:shadow-cardHover transition-all duration-300">
+              <div class="flex gap-1 text-accent-500 mb-4" aria-label="5 out of 5 stars">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .6-5.3 4.7L18 21l-6-3.5L6 21l1.3-7.2L2 9.1l7-.6z"/></svg>
+              </div>
+              <blockquote class="text-slate-700 leading-relaxed">"Professional, punctual, and truly invested in students. Highly recommend The Learner's Academy."</blockquote>
+              <figcaption class="mt-5 flex items-center gap-3">
+                <span class="w-10 h-10 rounded-full bg-brand-100 text-brand-800 grid place-items-center font-semibold text-sm">SR</span>
+                <div><p class="font-semibold text-sm text-brand-950">Sana Raza</p><p class="text-xs text-slate-500">Parent, O-Level</p></div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- SERVICE AREA                                                  -->
+      <!-- ============================================================= -->
+      <section id="area" class="bg-white/90 backdrop-blur-sm py-20 sm:py-24">
+        <div class="max-w-6xl mx-auto px-5 sm:px-6">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="reveal">
+              <span class="text-sm font-semibold text-brand-700 uppercase tracking-wider">Service Area</span>
+              <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-brand-950 tracking-tight">
+                Serving Students Across Karachi
+              </h2>
+              <p class="mt-4 text-slate-600 leading-relaxed">
+                We offer both in-person classes at our campus and home-tutoring options across the
+                city. If your neighborhood isn't listed, give us a call — we're always expanding.
+              </p>
+            </div>
+            <div class="reveal">
+              <ul class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>Gulshan-e-Iqbal</li>
+                <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>DHA</li>
+                <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>Clifton</li>
+                <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>Nazimabad</li>
+                <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>Korangi</li>
+                <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>Malir</li>
+                <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>Johar</li>
+                <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>PECHS</li>
+                <li class="flex items-center gap-2 bg-slate-50 rounded-xl px-4 py-3 text-sm font-medium text-slate-700"><span class="w-2 h-2 rounded-full bg-accent-500"></span>Bahadurabad</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- FINAL CTA                                                     -->
+      <!-- ============================================================= -->
+      <section class="bg-accent-500/95 backdrop-blur-sm py-16 sm:py-20">
+        <div class="max-w-4xl mx-auto px-5 sm:px-6 text-center reveal">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Ready to See Real Progress?
+          </h2>
+          <p class="mt-3 text-white/90 text-lg">
+            Call us today for a free consultation and find the right program for your child.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="tel:+922100000000"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-accent/75 text-white hover:bg-brand-50 hover:text-accent-600 font-semibold px-7 py-3.5 text-base shadow-lg transition-all hover:-translate-y-0.5 active:translate-y-0"
+            >
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              Schedule a Visit
+            </a>
+            <a
+              href="#services"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-accent/75 text-white hover:bg-brand-50 hover:text-accent-600 font-semibold px-7 py-3.5 text-base shadow-lg transition-all hover:-translate-y-0.5 active:translate-y-0"
+            >
+              View Programs
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
 
     <!-- ============================================================= -->
-    <!-- FOOTER                                                         -->
+    <!-- FOOTER                                                        -->
     <!-- ============================================================= -->
-    <footer class="bg-brand-950 text-brand-100">
+    <footer class="relative z-10 bg-brand-950/90 backdrop-blur-sm text-brand-100">
       <div class="max-w-6xl mx-auto px-5 sm:px-6 py-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
         <div class="lg:col-span-1">
           <div class="flex items-center gap-2 mb-4">
