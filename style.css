@@ -27,6 +27,12 @@ html {
   scroll-padding-top: 5rem;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .reveal.is-visible.tilt-card:hover {
+    transform: none;
+  }
+}
+
 /* Fade-out transition when navigating between sections */
 body {
   transition: opacity 0.4s ease-out;
@@ -41,4 +47,15 @@ body.fade-out {
 }
 .campus-card:hover .campus-overlay {
   opacity: 0;
+}
+
+/* Tilt-on-hover for service & testimonial cards */
+.tilt-card {
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.35s ease-out;
+  transform-origin: center bottom;
+}
+.reveal.is-visible.tilt-card:hover {
+  transform: translateY(-8px) rotate(-2.5deg) scale(1.02);
+  box-shadow: 0 22px 50px -10px rgba(15, 42, 94, 0.30);
 }
