@@ -26,3 +26,19 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
 }
+
+/* Fade-out transition when navigating between sections */
+body {
+  transition: opacity 0.4s ease-out;
+}
+body.fade-out {
+  opacity: 0;
+}
+
+/* Campus card slide-down overlay */
+.campus-card .campus-overlay {
+  transition: opacity 0.4s ease-out;
+}
+.campus-card:hover .campus-overlay {
+  opacity: 0;
+}
