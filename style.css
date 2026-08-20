@@ -35,6 +35,15 @@ body.fade-out {
   opacity: 0;
 }
 
+/* Card hover effect */
+.interactive-card {
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.interactive-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px -12px rgba(15, 42, 94, 0.28);
+}
+
 /* Campus card slide-down overlay (covers entire image, slides from top) */
 .campus-card .campus-overlay {
   transition: opacity 0.3s ease-out;

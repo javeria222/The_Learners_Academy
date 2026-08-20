@@ -32,6 +32,17 @@ scrollLinks.forEach((link) => {
   })
 })
 
+// Contact form confirmation without a real submission
+const contactForm = document.getElementById('contact-form')
+const contactSuccess = document.getElementById('contact-success')
+if (contactForm instanceof HTMLFormElement && contactSuccess) {
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault()
+    contactForm.reset()
+    contactSuccess.classList.remove('hidden')
+  })
+}
+
 // Current year in footer
 const yearEl = document.getElementById('year')
 if (yearEl) yearEl.textContent = String(new Date().getFullYear())
