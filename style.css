@@ -35,9 +35,9 @@ body.fade-out {
   opacity: 0;
 }
 
-/* Campus card slide-down overlay */
+/* Campus card slide-down overlay (covers entire image, slides from top) */
 .campus-card .campus-overlay {
-  transition: opacity 0.4s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 .campus-card:hover .campus-overlay {
   opacity: 0;
