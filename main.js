@@ -1,6 +1,6 @@
 import './style.css'
 
-// Reveal-on-scroll using IntersectionObserver (no animation library)
+// Reveal on scroll using IntersectionObserver
 const reveals = document.querySelectorAll('.reveal')
 const io = new IntersectionObserver(
   (entries) => {
@@ -15,6 +15,7 @@ const io = new IntersectionObserver(
 )
 reveals.forEach((el) => io.observe(el))
 
-// Current year in footer
+
+//Current year in footer
 const yearEl = document.getElementById('year')
 if (yearEl) yearEl.textContent = String(new Date().getFullYear())
