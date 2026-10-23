@@ -10,7 +10,7 @@
   transform: translateY(0);
 }
 
-/* Respect users who prefer reduced motion */
+/* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   .reveal {
     opacity: 1;
